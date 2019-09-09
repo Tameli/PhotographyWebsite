@@ -1,0 +1,70 @@
+#photos {
+	opacity: .88;
+}
+  
+#photos img {
+	width: 30%;
+	float: left;
+	display: block;
+	margin: 2px;
+}
+  
+ul {
+	list-style: none;
+	margin: 0px auto;
+	padding: 10px;
+	display: block;
+	max-width: 780px;
+	text-align: center;
+}
+  
+#overlay {
+	background: rgba(0,0,0, .8);
+	width: 100%;
+	height: 200%;
+	position: absolute; /*sonst funktioniert top(siehe unten) ect nicht*/
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	display: none;
+	text-align: center;
+}
+  
+#overlay img {
+  padding-top:100px;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 550px; /* mit nur "width oder height" ohne max,wird das Bild verzogen*/
+	border-radius: 5px;
+}
+  
+#photos {
+	width: 100%;
+}
+  
+#photo-gallery {
+	width: 100%;
+}
+
+  
+@media (min-width: 750px) {
+#photos img {
+		width: 10%;
+}
+
+ul{
+		max-width: 940px;
+}
+
+}
+  
+@media (min-width: 1000px) {
+	#photos img {
+		width: 18%;
+	}
+	ul{
+		max-width: 1280px;
+	}
+}
